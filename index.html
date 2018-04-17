@@ -1,0 +1,54 @@
+<head>
+  <title>VAT Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-sm-5">
+
+      <h5 class="mb-4">
+        - vat calculator
+      </h5>
+
+      <form>
+        <div class="form-group">
+          <label for="js-days">Total Days</label>
+          <input type="number" class="form-control" id="js-days" placeholder="Enter days worked">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">£</span>
+          </div>
+          <input type="number" class="form-control" id="js-rate" placeholder="Enter day rate">
+        </div>
+
+        <button class="btn btn-primary mr-3" id="js-submit">Work out VAT</button>
+        <small class="font-italic">Standard 20% VAT Rate</small>
+      </form>
+
+      <hr>
+
+      <div id="results">
+        <div id="js-display-tax"></div>
+        <div id="js-display-before"></div>
+        <div id="js-display-total"></div>
+        <button class="btn btn-danger mt-3" id="js-reset" disabled>Reset Form</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="./app.js"></script>
+
+</body>
