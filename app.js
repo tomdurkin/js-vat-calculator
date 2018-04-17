@@ -34,13 +34,9 @@ document.addEventListener('submit', function(e){
   disableStatus('js-reset', false);
   disableStatus('js-days','disabled');
   disableStatus('js-rate','disabled');
-  
+
   document.getElementById('results').style.display = 'block';
 
-  // document.getElementById('js-submit').disabled = 'disabled';
-  // document.getElementById('js-reset').disabled = false;
-  // document.getElementById('js-days').disabled = 'disabled';
-  // document.getElementById('js-rate').disabled = 'disabled';
 })
 
 // reset click actions
